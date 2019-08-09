@@ -45,6 +45,9 @@
 
     </div>
     <script type="text/javascript">
+        if (window.canRunAds === undefined) {
+            $('#myModal').modal('show');
+        }
         function TestPage() {
             var adHeight = $('.myTestAd').height();
             console.log(adHeight);
